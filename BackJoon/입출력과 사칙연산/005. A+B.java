@@ -19,6 +19,7 @@ public class Main {
     if(0 < i && j < 10){
     	int k = i + j;
         System.out.println(k);
-    	}
-	}
+    	}  
+    }
+    in.close();
 }
