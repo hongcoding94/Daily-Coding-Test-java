@@ -3,7 +3,7 @@
  * 강의 시청 : ✔️
  */
 
-// 강의를 보기전 내 방식
+// 강의를 보기전 내 방식 -> ✔️(Success)
 import java.util.Scanner;
 
 public class Main {
