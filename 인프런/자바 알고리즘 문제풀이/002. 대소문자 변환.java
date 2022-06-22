@@ -34,8 +34,8 @@ public class Main {
      if(Character.isLowerCase(x)) answer += Character.toUpperCase(x);
      else answer += Character.toLowerCase(x);
        
-     return answer;
    }
+     return answer;
  }
   
  public static void main(String[] args) {
@@ -51,6 +51,7 @@ public class Main {
 // 강의 방법 2 - 아스키코드로 구분
 
 import java.util.*;
+
 public class Main {
  public String solution(String str) {
   String answer = "";
@@ -58,8 +59,8 @@ public class Main {
      if(x >= 65 && x <= 122) answer += (char)( x - 32 );
      else answer += (char)( x + 32 );
        
-     return answer;
    }
+     return answer;
  }
   
  public static void main(String[] args) {
