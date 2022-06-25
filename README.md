@@ -17,6 +17,6 @@
     - 미정
 
 
-### 훗날 멋진 상상을 하며
+### 훗날 로직이 파파팍하고 나오는 멋진 상상을 하며
 
 ![image](https://user-images.githubusercontent.com/66407386/175782591-f081abf3-ed4f-40dc-a282-1c6a89b2a517.png)
