@@ -13,7 +13,6 @@ public class Main{
         while(in.hasNext()){
             System.out.println(in.nextLine());
         }
-        
         in.close();
     }
 }
