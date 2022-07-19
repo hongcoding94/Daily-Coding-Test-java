@@ -60,11 +60,14 @@
 
 #### 3. BufferedReader&BufferedWriter에 대하여
 
- - BufferedReader&BufferedWriter
- >  - 
+ - BufferedReader & BufferedWriter
+ >  - BufferedReader
+ >  > 이해 후 작성예정
+ >  > 이해 후 작성예정
  >  >
- >  >
- >  >
+ >  - BufferedWriter
+ >  > 이해 후 작성예정
+ >  > 이해 후 작성예정
  >  >
  >  - 흐름도
  >  > ![image](https://user-images.githubusercontent.com/66407386/179729363-bd399be7-e5de-4313-a8a2-e79f5c9696bb.png)
@@ -75,6 +78,9 @@
 
 #### 4. 반성과 회고록
 
+ 익숙한 Scanner만 쓰려고 했던 과거의 나에게 정말 Buffer를 사용하여 코딩테스트에 임했다면<br/>
+ 보다 좋은 로직과 효율성을 이끌어 낼수 있었을 것이라 생각한다.<br/>
+ 아직 Buffer가 익숙하지 않지만 최대한 빨리 적응하여 코테를 하게된다면 Buffer의 장점을 살려서 효율적인 코딩 테스트를 준비해야겠다.
 
 #### 5. 참고 내용
   1. [Programiz 자바 스캐너 클래스](https://www.programiz.com/java-programming/scanner)
