@@ -55,10 +55,22 @@
  >  - 흐름도
  >  > ![image](https://user-images.githubusercontent.com/66407386/179727520-0ef09725-1083-42c1-9d72-8fb38b244b5d.png)
  >  > 
- >  > 입출력이 한자 한자 들어갈 시 Cpu와 성능에 갭이 생겨 데이터 입력에 버퍼랑 비교 하였을 때 비효율성을 확인 할 수 있다.
+ >  > 입출력이 한자 한자 들어갈 시 Cpu와 성능에 갭이 생겨 데이터 입력에 버퍼랑 비교 하였을 때 비효율성을 확인 할 수 있다.<br/>
+ >  > 단, Buffer와 다르게 여러 타입을 적용할 수 있기 때문에 데이터 가공이 번거롭지 않다고 하지만 속도가 Buffer보다 느리다.
 
 #### 3. BufferedReader&BufferedWriter에 대하여
 
+ - BufferedReader&BufferedWriter
+ >  - 
+ >  >
+ >  >
+ >  >
+ >  >
+ >  - 흐름도
+ >  > ![image](https://user-images.githubusercontent.com/66407386/179729363-bd399be7-e5de-4313-a8a2-e79f5c9696bb.png)
+ >  > 
+ >  > 입출력이 문자로 전송하여 버퍼가 가득차거나 개행 할 시 Cpu와 성능에 많은 비효율성을 줄일 수 있기 때문이다.<br/>
+ >  > 단, String으로 고정되기 때문에 데이터 가공을 많이 하여야 하기 때문에 번거로움이 있지만 속도는 Scanner보다 빠르다.
 
 
 #### 4. 반성과 회고록
