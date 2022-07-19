@@ -61,20 +61,41 @@
 #### 3. BufferedReader&BufferedWriter에 대하여
 
  - BufferedReader & BufferedWriter
- >  - BufferedReader
- >  > 이해 후 작성예정
- >  > 이해 후 작성예정
- >  >
- >  - BufferedWriter
- >  > 이해 후 작성예정
- >  > 이해 후 작성예정
+ >  ##### BufferedReader
+ >  - 정의
+ >  > BufferedReader는 개행문자만 경계로 인식하고 입력받은 데이터가 String으로 고정된다.<br/>
+ >  > 때문에 따로 데이터를 가공해야하는 경우가 많다. 하지만 Scanner보다 속도가 빠르다! - 아래의 흐름도 참조
+ >  > 
+ >  - 공식문서 내용 中
+ >  > ![image](https://user-images.githubusercontent.com/66407386/179772959-72c0b474-afe5-4c33-b89b-7a79a2441147.png)
+ >  > 
+ >  > ```text
+ >  > BufferedReader reads text from a character-input stream, buffering characters so as to provide for 
+ >  > the efficient reading of characters, arrays, and lines.
+ >  > 문자 입력 스트림에서 텍스트를 읽으며 문자, 배열 및 행을 효율적으로 읽을 수 있도록 문자를 버퍼링한다.
+ >  > 
+ >  > The buffer size may be specified, or the default size may be used. The default is large enough for most purposes.
+ >  > 버퍼 크기를 지정하거나 기본 크기를 사용할 수 있습니다. 기본값(default)은 대부분의 용도에 맞게 충분히 큽니다.
+ >  > ```
+ >  > 
+ >  - Scanner와 BufferedReader의 차이 예시
+ >  > ![image](https://user-images.githubusercontent.com/66407386/179776195-c1ebc33c-5c05-4943-a07c-4193ca9c3c33.png)
  >  >
  >  - 흐름도
  >  > ![image](https://user-images.githubusercontent.com/66407386/179729363-bd399be7-e5de-4313-a8a2-e79f5c9696bb.png)
  >  > 
  >  > 입출력이 문자로 전송하여 버퍼가 가득차거나 개행 할 시 Cpu와 성능에 많은 비효율성을 줄일 수 있기 때문이다.<br/>
  >  > 단, String으로 고정되기 때문에 데이터 가공을 많이 하여야 하기 때문에 번거로움이 있지만 속도는 Scanner보다 빠르다.
-
+ >  >
+ >  ##### BufferedWriter
+ >  - 정의
+ >  > System.out.println(); == BufferedWriter 동일한 기능을 하는 메소드이다.<br/>
+ >  > Buffer를 이용하기때문에 효율이 좋고 많이 양의 데이터를 처리할때 이득
+ >  > 
+ >  - 주의점
+ >  > Scanner처럼 바로 적용되는것이 아니라 버퍼에 데이터를 저장했다가 버퍼가<br/>
+ >  > flush나 close가 될때 한번에 Stream쪽으로 전달이 되기 때문이다.<br/>
+ >  > 따라서 해당값을 출력하기 위해선 "BufferedWriter.flush();와 BufferedWriter.close();"를 꼭 사용해줘야한다.
 
 #### 4. 반성과 회고록
 
@@ -89,6 +110,7 @@
   2. [Tistory 양햄찌님의 BufferedReader / BufferWriter](https://jhnyang.tistory.com/m/92)
   3. [Tistory 크크님의 BufferedReader / BufferedWriter](https://rlakuku-program.tistory.com/33)
   4. [naver Yjh701701님의 BufferedReader, Bufferedwriter 사용법 및 공백단위 가공](https://m.blog.naver.com/yjh701701/222795285552)
+  5. [ZetCode 홈페이지의 bufferedreader문서 요약](https://zetcode.com/java/bufferedreader/)
 
 ---
 <div align="center">
