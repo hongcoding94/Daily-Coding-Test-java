@@ -86,7 +86,7 @@
 
 #### 5. 참고 내용
   1. [Programiz 자바 스캐너 클래스](https://www.programiz.com/java-programming/scanner)
-  2. [Tistory 양햄찌님의 BufferedReader / BufferWriter](https://jhnyang.tistory.com/m/92/comments)
+  2. [Tistory 양햄찌님의 BufferedReader / BufferWriter](https://jhnyang.tistory.com/m/92)
   3. [Tistory 크크님의 BufferedReader / BufferedWriter](https://rlakuku-program.tistory.com/33)
   4. [naver Yjh701701님의 BufferedReader, Bufferedwriter 사용법 및 공백단위 가공](https://m.blog.naver.com/yjh701701/222795285552)
 
