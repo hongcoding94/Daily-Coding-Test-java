@@ -49,20 +49,31 @@
  >  > InputStream은 **바이트 기반 입력 스트림의 최상위 추상클래스** 그리고 InputStream의 추상메소드를<br/>
  >  > 오버라이딩하여 목적에 따라 데이터를 입력 받을 수 있다.
  >  > 
+ >  > 즉. System.in표준 입력에서 입력을 받는 데 사용됩니다. 키보드에서 입력을 받는 것처럼 작동
+ >  > 
+ >  
+ >  - 흐름도
+ >  > ![image](https://user-images.githubusercontent.com/66407386/179727520-0ef09725-1083-42c1-9d72-8fb38b244b5d.png)
+ >  > 
+ >  > 입출력이 한자 한자 들어갈 시 Cpu와 성능에 갭이 생겨 데이터 입력에 버퍼랑 비교 하였을 때 비효율성을 확인 할 수 있다.
 
 #### 3. BufferedReader&BufferedWriter에 대하여
+
 
 
 #### 4. 반성과 회고록
 
 
 #### 5. 참고 내용
-
-
+  1. [Programiz 자바 스캐너 클래스](https://www.programiz.com/java-programming/scanner)
+  2. [Tistory 양햄찌님의 BufferedReader / BufferWriter](https://jhnyang.tistory.com/m/92/comments)
+  3. [Tistory 크크님의 BufferedReader / BufferedWriter](https://rlakuku-program.tistory.com/33)
+  4. [naver Yjh701701님의 BufferedReader, Bufferedwriter 사용법 및 공백단위 가공](https://m.blog.naver.com/yjh701701/222795285552)
 
 ---
 <div align="center">
   <b>긴 글 읽어주셨어 감사합니다.</b><br/><br/>
+  아직 많이 배워야하는 웹린이 입니다.<br/>
   내용에 문제가 있다면 이슈를 통해 알려주신다면 <br>
   감사하겠습니다.
  </div>
