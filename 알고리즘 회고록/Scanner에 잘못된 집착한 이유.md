@@ -21,7 +21,7 @@
 #### 2. Scanner에 대하여
 
  - Scanner
- > 필자가 아는 스캐너는 남궁성님의 자바의정석3판에 나와있는 자료를 기초로 하였다. - [자바의정석3판 내용 中)Scanner 사용방법](https://github.com/hongcoding94/java_storage/blob/main/Chapter02.%20%EB%B3%80%EC%88%98(Variable).md#2-6-%ED%99%94%EB%A9%B4%EC%97%90%EC%84%9C-%EC%9E%85%EB%A0%A5%EB%B0%9B%EA%B8%B0)
+ > 필자가 아는 스캐너는 남궁성님의 자바의정석3판에 나와있는 자료를 기초로 하였다. - [자바의정석3판 내용 中) Scanner 사용방법](https://github.com/hongcoding94/java_storage/blob/main/Chapter02.%20%EB%B3%80%EC%88%98(Variable).md#2-6-%ED%99%94%EB%A9%B4%EC%97%90%EC%84%9C-%EC%9E%85%EB%A0%A5%EB%B0%9B%EA%B8%B0)
  >  - 스캐너의 각각의 기본적인 설명은 하지 않도록 하겠다.(핵심만 말하고 싶습니다)
  >  > Scanner의 메소드들이 궁금하다면 이클립스 혹은 인텔리제이 내에서 class파일에 Scanner import한 후 <br/> 
  >  > ctrl과 마우스를 가져가 살포시 눌러주면 해당 방식이 나오니 참고 하기 바랍니다.
@@ -29,7 +29,26 @@
  >  - Scanner는 바이트 표준 입력 스트림을 통해서 작동하며 해당 인코딩을 통하여 진수가 아닌 문자열 혹은 정수 실수 등으로 변환하여 보인다.
  >  ![image](https://user-images.githubusercontent.com/66407386/179672607-cc3f6b1d-1140-49fa-a243-77c5abf27e24.png)
  > 
- >  - 
+ >  - Scanner안에 궁금증<br/>
+ >  > 매번 우리는 Scanner를 쓰기전 메소드 안에 스캐너를 선언 후 임포트한다.
+ >  > ```java
+ >  > import java.util.Scanner;
+ >  > 
+ >  > public class Main{
+ >  >  public static void main(String[] args) {
+ >  >   Scanner in = new Scanner(System.in);
+ >  >  }
+ >  > }
+ >  > ```
+ >  > 여기서 Scanner 안의 System.in은 무엇인가? 의문점이 생기기 시작했다.
+ >  > ![asc](https://user-images.githubusercontent.com/66407386/179691369-a4b2e2aa-dcdb-4797-9b19-43c9ec76ca4f.png)
+ >  > 
+ >  > 
+ >  - 스트림의 기본적 설명은 하지 않도록 하겠다.(핵심만 말하고 싶습니다.) - [자바의정석3판 내용 中) 스트림(stream)](https://github.com/hongcoding94/java_storage/blob/main/Chapter14.%20%EB%9E%8C%EB%8B%A4%EC%99%80%20%EC%8A%A4%ED%8A%B8%EB%A6%BC.md#%EC%8A%A4%ED%8A%B8%EB%A6%BCstream)<br/>
+ >  > System 안에 InputStream을 내포하고 있는 것을 위 System.class에서 확인 할 수 있다.<br/>
+ >  > InputStream은 **바이트 기반 입력 스트림의 최상위 추상클래스** 그리고 InputStream의 추상메소드를<br/>
+ >  > 오버라이딩하여 목적에 따라 데이터를 입력 받을 수 있다.
+ >  > 
 
 #### 3. BufferedReader&BufferedWriter에 대하여
 
