@@ -62,7 +62,7 @@
 
 
 #### 7. 참고내용
- 1. [위키백과 홈페이지의 해시 함수]((https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98)
+ 1. [위키백과 홈페이지의 해시 함수](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98)
  2. [위키백과 홈페이지의 해시 충돌](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%EC%B6%A9%EB%8F%8C)
 
 ---
