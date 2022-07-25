@@ -22,7 +22,7 @@
    "키(key) 값(value)을 원소 위치로 변환하는 함수를 해시함수(Hash Function)"이라 한다.
    ```
  
-![image](https://user-images.githubusercontent.com/66407386/180716327-8d96fcc4-b4fc-4d81-9ace-e1d89d1652e3.png)
+   ![image](https://user-images.githubusercontent.com/66407386/180716327-8d96fcc4-b4fc-4d81-9ace-e1d89d1652e3.png)
 
 - 해시함수(hash function)
   ```text
