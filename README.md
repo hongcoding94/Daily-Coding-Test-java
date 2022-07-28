@@ -14,7 +14,7 @@
  - 내용 목록
     - BackJoon(일 1회)
     - 인프런/자바 알고리즘 문제풀이(주 4회[개인풀이 및 영상풀이, 개인풀이 설명]) <br/>
-      ☞ 현재 [psStydy](https://github.com/hongcoding94/psStudy) 에서 매일 공부중
+      ☞ 현재 [CodingTestStudy](https://github.com/hongcoding94/CodingTestStudy) 에서 매일 공부중
     - 알고리즘 회고록은 문제를 풀다가 확실하게 집고 가야겠다 생각하는 부분들 <br/>혹은 필자의 필요에 의해서
 
 
