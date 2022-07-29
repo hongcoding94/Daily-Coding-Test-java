@@ -114,26 +114,31 @@
             // Set<타입(Type)> set = new HashSet<타입(Type)>();  JDK8버전 이후 부터 "new HashSet<>();"으로 지정하더라도 타입이 자동으로 입력된다.
             
             Set<String> set = new HashSet<>();
-            set.add("삼X증권");
+            set.add("삼XX권");
             set.add("검X청");
             set.add("LXX활건강");
-            set.add("삼X증권");
+            set.add("삼XX권");
             set.add("검X청");
             set.remove("검X청");
             
             Iterator<String> it = set.iterator();
-    	    while(it.hasNext()) {
-    		    String str = it.next();
-    		System.out.println(str);
-    	    }
+    	       while(it.hasNext()) {
+    		         String str = it.next();
+    		         System.out.println(str);
+    	       }
         }
     }
+    // 출력결과 
+    // 삼XX권 
+    // LXX활건강
     ```
-- 출력결과
-    ```text
-    삼X증권
-    LXX활건강
-    ```
+ - 예제의 출력 흐름도
+ 
+<div align="center"> 
+ 
+![image](https://user-images.githubusercontent.com/66407386/181683699-c23697cd-05c1-4f8d-9725-2e8077f5c00a.png)
+
+</div>
 
 
 
