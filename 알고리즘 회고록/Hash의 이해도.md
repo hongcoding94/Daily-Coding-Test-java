@@ -156,6 +156,7 @@
  2. [위키백과 홈페이지의 해시 충돌](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%EC%B6%A9%EB%8F%8C)
  3. [개발/지름님의 Hash의 특징과 종류](https://tertis.tistory.com/entry/HASH%EC%9D%98-%ED%8A%B9%EC%A7%95%EA%B3%BC-%EC%A2%85%EB%A5%98)
  4. [kkw9312님의 Hash에 대해 공부해보자!](https://velog.io/@kkw9312/javaHash)
+ 5. [st-lab님의 자바 [JAVA] - Hash Set (해시 셋) 구현하기](https://st-lab.tistory.com/240)
 ---
 <div align="center">
   <b>긴 글 읽어주셨어 감사합니다.</b><br/><br/>
