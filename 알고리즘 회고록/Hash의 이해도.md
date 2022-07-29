@@ -141,6 +141,7 @@
  > Key, Value로 데이터를 저장하는 자료 구조이자 빠르게 데이터를 검색할 수 있는 자료구조<br/>
  > Key값에 대한 고유 index를 생성하여 값을 저장(buckets)하는 구조이다.<br/>
  > HashTable의 평균 시간복잡도는 O(1)이다.<br/>
+ >
  > 단, 데이터의 충돌이 발생한 경우 Chaining에 연결된 리스트들까지 검색하기 때문에 O(N)까지<br/>
  > &nbsp; &nbsp; &nbsp; 시간복잡도가 증가하기 때문에 오히려 치명적인 성능저하로 이어질 수 있다.
  
@@ -150,7 +151,7 @@
  &nbsp; &nbsp; ▶ 반은 맞고 받은 맞다 아래의 HashMap과 HashTable의 차이점을 알아보자.<br/>
  
  - HashMap과 HashTable의 차이점
- > HashMap과 HashTable 과연 무슨 차이점이 있을까?
+ > HashMap과 HashTable 과연 무슨 차이점이 있을까?<br/>
  > 아래의 내부 코드를 살펴보자.
  > 
  
