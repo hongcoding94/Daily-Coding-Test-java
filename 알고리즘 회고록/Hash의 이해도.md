@@ -148,7 +148,7 @@
   ※ 추후에 "시간복잡도"라는 내용으로 추가적으로 다루도록 하겠다.
  
  ❔ 그렇다면 HashMap과 HashTable의 차이점이 없는가 아닌가? <br/>
- &nbsp; &nbsp; ▶ 반은 맞고 받은 맞다 아래의 HashMap과 HashTable의 차이점을 알아보자.<br/>
+ &nbsp; &nbsp; ▶ 반은 맞고 받은 틀리다. 아래의 HashMap과 HashTable의 차이점을 알아보자.<br/>
  
  - HashMap과 HashTable의 차이점
  > HashMap과 HashTable 과연 무슨 차이점이 있을까?<br/>
@@ -174,6 +174,7 @@
  3. [개발/지름님의 Hash의 특징과 종류](https://tertis.tistory.com/entry/HASH%EC%9D%98-%ED%8A%B9%EC%A7%95%EA%B3%BC-%EC%A2%85%EB%A5%98)
  4. [kkw9312님의 Hash에 대해 공부해보자!](https://velog.io/@kkw9312/javaHash)
  5. [st-lab님의 자바 [JAVA] - Hash Set (해시 셋) 구현하기](https://st-lab.tistory.com/240)
+ 
 ---
 <div align="center">
   <b>긴 글 읽어주셨어 감사합니다.</b><br/><br/>
