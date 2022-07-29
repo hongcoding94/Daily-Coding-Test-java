@@ -133,12 +133,8 @@
     // LXX활건강
     ```
  - 예제의 출력 흐름도
- 
-<div align="center"> 
- 
-![image](https://user-images.githubusercontent.com/66407386/181683699-c23697cd-05c1-4f8d-9725-2e8077f5c00a.png)
 
-</div>
+   ![image](https://user-images.githubusercontent.com/66407386/181683699-c23697cd-05c1-4f8d-9725-2e8077f5c00a.png)
 
 
 
