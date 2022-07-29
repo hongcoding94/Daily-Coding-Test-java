@@ -29,6 +29,7 @@
     하나의 주어진 출력에 대하여 이 출력으로 사상시키는 하나의 입력을 찾는 것이 계산적으로 불가능하고,
     하나의 주어진 입력에 대하여 같은 출력으로 사상시키는 또 다른 입력을 찾는 것이 계산적으로
     불가능하다는 두 가지 성질을 만족하면서 임의의 비트열을 고정된 길이의 비트열로 사상시키는 함수
+    
     즉, 임의의 길이를 갖는 데이터를 입력받아 고정된 길이의 해시값을 출력하는 함수
     암호 알고리즘에는 키가 사용되며, 해시 함수는 키를 사용하지 않으므로 같은 입력에 
     대해서는 항상 같은 출력이 나오며 해시함수를 사용하는 
@@ -162,18 +163,30 @@
 
 #### 5. Hash Map 대하여
 
+ - HashMap의 정의
+ 
+ 
+ - HashMap
+ 
+ 
+ - 선언방법 및 예제
+ 
+ 
+ - 예제의 출력 흐름도
 
-
+ 
 #### 6. 반성과 회고록
 
 
 
 #### 7. 참고내용
- 1. [위키백과 홈페이지의 해시 함수](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98)
- 2. [위키백과 홈페이지의 해시 충돌](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%EC%B6%A9%EB%8F%8C)
- 3. [개발/지름님의 Hash의 특징과 종류](https://tertis.tistory.com/entry/HASH%EC%9D%98-%ED%8A%B9%EC%A7%95%EA%B3%BC-%EC%A2%85%EB%A5%98)
- 4. [kkw9312님의 Hash에 대해 공부해보자!](https://velog.io/@kkw9312/javaHash)
- 5. [st-lab님의 자바 [JAVA] - Hash Set (해시 셋) 구현하기](https://st-lab.tistory.com/240)
+ 1. [별의수다님의 해시 함수의 종류](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=wnrjsxo&logNo=221718933319)
+ 2. [위키백과 홈페이지의 해시 함수](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98)
+ 3. [위키백과 홈페이지의 해시 충돌](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%EC%B6%A9%EB%8F%8C)
+ 4. [개발/지름님의 Hash의 특징과 종류](https://tertis.tistory.com/entry/HASH%EC%9D%98-%ED%8A%B9%EC%A7%95%EA%B3%BC-%EC%A2%85%EB%A5%98)
+ 5. [kkw9312님의 Hash에 대해 공부해보자!](https://velog.io/@kkw9312/javaHash)
+ 6. [st-lab님의 자바 [JAVA] - Hash Set (해시 셋) 구현하기](https://st-lab.tistory.com/240)
+ 7. [배하람님의 해슅 테이블이란?](https://baeharam.netlify.app/posts/data%20structure/hash-table)
  
 ---
 <div align="center">
