@@ -13,7 +13,6 @@
  - 시작에 앞서
  > Hash 이해도를 키워야 하는 이유는 <b>알고리즘에서 문제 해결을 원만하게 해주는 역할을 하며<br/>
  > 현업에서 자료구조를 통해 정보를 효율적으로 관리하는데 많은 역할을 할 것이라 필자는 생각</b>한다.
-
 #### 2. Hash 종류 대하여
 
  - 해시(Hash)이란?
@@ -30,7 +29,6 @@
     하나의 주어진 출력에 대하여 이 출력으로 사상시키는 하나의 입력을 찾는 것이 계산적으로 불가능하고,
     하나의 주어진 입력에 대하여 같은 출력으로 사상시키는 또 다른 입력을 찾는 것이 계산적으로
     불가능하다는 두 가지 성질을 만족하면서 임의의 비트열을 고정된 길이의 비트열로 사상시키는 함수
-
     즉, 임의의 길이를 갖는 데이터를 입력받아 고정된 길이의 해시값을 출력하는 함수
     암호 알고리즘에는 키가 사용되며, 해시 함수는 키를 사용하지 않으므로 같은 입력에 
     대해서는 항상 같은 출력이 나오며 해시함수를 사용하는 
@@ -39,13 +37,21 @@
 
  - 여기서 빨강색으로 이어저 있는 jeong과 han은 두개는 충돌로 인해서 데이터가 손상된다.<br/>
   ☞ 이처럼 "해시충돌"이 일어난다.
- 
    ※ Hash 충돌이란?<br/>
-      - Hash 함수가 서로 다른 두개의 입력값에 대해 동일한 출려값을 내는 상황을 의미<br/>
+      - Hash 함수가 서로 다른 두개의 입력값에 대해 동일한 출려값을 내는 상황을 의미
       - Hash 충돌은 해시 함수를 이용한 자료구조나 알고리즘의 효율성을 떨어트리기 때문에<br/>
-        오히려 역효과를 만들 수 있기 때문에 자주 사용하는 것은 지양한다.<br/>
-      - Hash 충돌을 했을 때 해결 방법 >>> 공부 中
- 
+      오히려 역효과를 만들 수 있기 때문에 자주 사용하는 것은 지양한다.
+      - Hash 충돌을 했을 때 해결 방법 
+        - 열린 어드레싱 방법(Open addressing method)<br/>
+            A. 성형 조사법<br/>
+            B. 이차 조사법<br/>
+            C. 이중 해시<br/>
+            D. 재해싱<br/>
+        - 닫힌 어드레싱 방법(Closed addressing method)<br/>
+            A. 체이닝<br/>
+
+    ※ 자세한 내용은 "Hash 충돌을 했을 때"라는  내용으로 추가적으로 다루도록 하겠다.
+
  - 해시의 특징<br/>
    a. 일방향성 : >>> 공부 中 <br/>
    
@@ -71,6 +77,64 @@
    필자가 사용해본 Hash 알고리즘 - SHA256, SHA512
   
 #### 3. Hash Set 대하여
+
+   - HashSet의 정의
+   > Hash + Set이 혼합되어 만들어진 것이라 필자는 생각하며 자바 내부구현 코드를 봐도 그와 같은 모습을 볼 수 있다.<br/>
+   > 그 예로 아래의 HashSet의 내부 구현 코드를 확인해보자.
+
+<div align="center">   
+ 
+   ![HashSet(1)](https://user-images.githubusercontent.com/66407386/181668628-cc46e7d8-c187-4a72-aa96-8c892d824f0f.png)
+ 
+</div>
+
+   > HashSet 내부를 확인하면 AbstratSet<E>을 extends 받으면 동시에 Set을 implements 받는 것을 확인 할 수 있다.<br/>
+   > 
+   > 더 자세히 들어가보면 아래와 같다.
+ 
+<div align="center">   
+ 
+ ![HashSet(2)](https://user-images.githubusercontent.com/66407386/181668651-db4811cd-a626-4d92-b7ae-a347109a5097.png)
+ 
+</div> 
+ 
+   > AbstractSet은 다시 한번 컬렉션의 Extends를 받고 Set를 implements를 하여 셋팅을 하게 된다.<br/>
+   > 1. boolean구조로 문자를 비교<br/>
+   > 2. HashCode로 다음 값이 있는지 출력<br/>
+   > 3. boolean구조로 해당 동일 구조가 있다면 삭제<br/>
+   > 
+   > 위 코드와 같이 진행됨으로 Set의 특징을 HashSet으로 가져오면서 Hash의 특징을 살려내는 역할을 하지 않았을까 생각한다.<br/>
+   > 기본적인 Set이 특성은 중복된 타이브이 객체는 저장하지 않으며<br/>
+   > 때문에 HashSet 역시 같은 특징을 가지고 있다.    
+   
+- 선언방법 방법 및 예제
+    ```java
+    public class Main {
+        public static void main(String[] args) {
+            // Set<타입(Type)> set = new HashSet<타입(Type)>();  JDK8버전 이후 부터 "new HashSet<>();"으로 지정하더라도 타입이 자동으로 입력된다.
+            
+            Set<String> set = new HashSet<>();
+            set.add("삼X증권");
+            set.add("검X청");
+            set.add("LXX활건강");
+            set.add("삼X증권");
+            set.add("검X청");
+            set.remove("검X청");
+            
+            Iterator<String> it = set.iterator();
+    	    while(it.hasNext()) {
+    		    String str = it.next();
+    		System.out.println(str);
+    	    }
+        }
+    }
+    ```
+- 출력결과
+    ```text
+    삼X증권
+    LXX활건강
+    ```
+
 
 
 
