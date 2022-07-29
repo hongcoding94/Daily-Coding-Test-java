@@ -100,14 +100,14 @@
  
    > AbstractSet은 다시 한번 컬렉션의 Extends를 받고 Set를 implements를 하여 셋팅을 하게 된다.<br/>
    > 1. boolean구조로 문자를 비교<br/>
-   > 2. HashCode로 다음 값이 있는지 출력<br/>
+   > 2. HashCode는 Object가 null이 아니라면 주소값을 입력하여 리턴<br/>
    > 3. boolean구조로 해당 동일 구조가 있다면 삭제<br/>
    > 
    > 위 코드와 같이 진행됨으로 Set의 특징을 HashSet으로 가져오면서 Hash의 특징을 살려내는 역할을 하지 않았을까 생각한다.<br/>
    > 기본적인 Set이 특성은 중복된 타이브이 객체는 저장하지 않으며<br/>
    > 때문에 HashSet 역시 같은 특징을 가지고 있다.    
    
-- 선언방법 방법 및 예제
+- 선언방법 및 예제
     ```java
     public class Main {
         public static void main(String[] args) {
@@ -133,14 +133,30 @@
     // LXX활건강
     ```
  - 예제의 출력 흐름도
-
    ![image](https://user-images.githubusercontent.com/66407386/181683699-c23697cd-05c1-4f8d-9725-2e8077f5c00a.png)
-
-
-
 
 #### 4. Hash Table 대하여
 
+ - HashTable의 정의
+ > Key, Value로 데이터를 저장하는 자료 구조이자 빠르게 데이터를 검색할 수 있는 자료구조<br/>
+ > Key값에 대한 고유 index를 생성하여 값을 저장(buckets)하는 구조이다.<br/>
+ > HashTable의 평균 시간복잡도는 O(1)이다.<br/>
+ > 단, 데이터의 충돌이 발생한 경우 Chaining에 연결된 리스트들까지 검색하기 때문에 O(N)까지<br/>
+ > &nbsp; &nbsp; &nbsp; 시간복잡도가 증가하기 때문에 오히려 치명적인 성능저하로 이어질 수 있다.
+ 
+  ※ 추후에 "시간복잡도"라는 내용으로 추가적으로 다루도록 하겠다.
+ 
+ ❔ 그렇다면 HashMap과 HashTable의 차이점이 없는가 아닌가? <br/>
+ &nbsp; &nbsp; ▶ 반은 맞고 받은 맞다 아래의 HashMap과 HashTable의 차이점을 알아보자.<br/>
+ 
+ - HashMap과 HashTable의 차이점
+ > HashMap과 HashTable 과연 무슨 차이점이 있을까?
+ > 아래의 내부 코드를 살펴보자.
+ > 
+ 
+ - 선언방법 및 예제
+ 
+ - 예제의 출력 흐름도
 
 
 #### 5. Hash Map 대하여
