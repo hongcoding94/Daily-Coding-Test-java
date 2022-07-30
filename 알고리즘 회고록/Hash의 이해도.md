@@ -5,8 +5,9 @@
  3. [Hash Set 대하여](https://github.com/hongcoding94/Daily-Coding-Test-java/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%ED%9A%8C%EA%B3%A0%EB%A1%9D/Hash%EC%9D%98%20%EC%9D%B4%ED%95%B4%EB%8F%84.md#2-hash-%EC%A2%85%EB%A5%98-%EB%8C%80%ED%95%98%EC%97%AC)
  4. [Hash Table 대하여](https://github.com/hongcoding94/Daily-Coding-Test-java/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%ED%9A%8C%EA%B3%A0%EB%A1%9D/Hash%EC%9D%98%20%EC%9D%B4%ED%95%B4%EB%8F%84.md#2-hash-%EC%A2%85%EB%A5%98-%EB%8C%80%ED%95%98%EC%97%AC)
  5. [Hash Map 대하여](https://github.com/hongcoding94/Daily-Coding-Test-java/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%ED%9A%8C%EA%B3%A0%EB%A1%9D/Hash%EC%9D%98%20%EC%9D%B4%ED%95%B4%EB%8F%84.md#2-hash-%EC%A2%85%EB%A5%98-%EB%8C%80%ED%95%98%EC%97%AC)
- 6. [반성과 회고록](https://github.com/hongcoding94/Daily-Coding-Test-java/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%ED%9A%8C%EA%B3%A0%EB%A1%9D/Hash%EC%9D%98%20%EC%9D%B4%ED%95%B4%EB%8F%84.md#2-hash-%EC%A2%85%EB%A5%98-%EB%8C%80%ED%95%98%EC%97%AC)
- 7. [참고내용](https://github.com/hongcoding94/Daily-Coding-Test-java/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%ED%9A%8C%EA%B3%A0%EB%A1%9D/Hash%EC%9D%98%20%EC%9D%B4%ED%95%B4%EB%8F%84.md#2-hash-%EC%A2%85%EB%A5%98-%EB%8C%80%ED%95%98%EC%97%AC)
+ 6. [HashMap과 HashTable의 차이점]()
+ 7. [반성과 회고록](https://github.com/hongcoding94/Daily-Coding-Test-java/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%ED%9A%8C%EA%B3%A0%EB%A1%9D/Hash%EC%9D%98%20%EC%9D%B4%ED%95%B4%EB%8F%84.md#2-hash-%EC%A2%85%EB%A5%98-%EB%8C%80%ED%95%98%EC%97%AC)
+ 8. [참고내용](https://github.com/hongcoding94/Daily-Coding-Test-java/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%ED%9A%8C%EA%B3%A0%EB%A1%9D/Hash%EC%9D%98%20%EC%9D%B4%ED%95%B4%EB%8F%84.md#2-hash-%EC%A2%85%EB%A5%98-%EB%8C%80%ED%95%98%EC%97%AC)
 
 #### 1. Hash 이해도를 키우는 이유
 
@@ -149,12 +150,7 @@
   ※ 추후에 "시간복잡도"라는 내용으로 추가적으로 다루도록 하겠다.
  
  ❔ 그렇다면 HashMap과 HashTable의 차이점이 없는가 아닌가? <br/>
- &nbsp; &nbsp; ▶ 반은 맞고 받은 틀리다. 아래의 HashMap과 HashTable의 차이점을 알아보자.<br/>
- 
- - HashMap과 HashTable의 차이점
- > HashMap과 HashTable 과연 무슨 차이점이 있을까?<br/>
- > 아래의 내부 코드를 살펴보자.
- > 
+ &nbsp; &nbsp; ▶ 반은 맞고 받은 틀리다. 아래의 HashMap과 HashTable의 차이점을 알아보자. - [HashMap과 HashTable의 차이점 이동]()<br/>
  
  - 선언방법 및 예제
  
@@ -174,12 +170,26 @@
  
  - 예제의 출력 흐름도
 
+#### 6. HashMap과 HashTable의 차이점
+  
+ - HashMap과 HashTable의 차이점
+ > HashMap과 HashTable 과연 무슨 차이점이 있을까?<br/>
+ > 아래의 내부 코드를 살펴보자.
+ > 
+
+ A. 동기화
+ >
+ >
+
+ B. 방환값
+ >
+ >
  
-#### 6. 반성과 회고록
+#### 7. 반성과 회고록
 
 
 
-#### 7. 참고내용
+#### 8. 참고내용
  1. [별의수다님의 해시 함수의 종류](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=wnrjsxo&logNo=221718933319)
  2. [위키백과 홈페이지의 해시 함수](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98)
  3. [위키백과 홈페이지의 해시 충돌](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%EC%B6%A9%EB%8F%8C)
