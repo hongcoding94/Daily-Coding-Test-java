@@ -155,8 +155,10 @@
  
  - 선언방법 및 예제
  
+ 
  - 예제의 출력 흐름도
 
+ 
 
 #### 5. Hash Map 대하여
 
@@ -172,20 +174,39 @@
  - 예제의 출력 흐름도
 
 #### 6. HashMap과 HashTable의 차이점
-  
- - HashMap과 HashTable의 차이점
- > HashMap과 HashTable 과연 무슨 차이점이 있을까?<br/>
- > 아래의 내부 코드를 살펴보자.
- > 
-
- A. 동기화
- >
- >
-
- B. 방환값
- >
- >
+ - HashMap과 HashTable의 공통점
+   A. Map을 상속 받아 구현하는 클래스이며 Key, value를 한상으로 가진 자료구조
+   B. Key에 Hash함수를 적용하여 고유의 Index를 생성한 후, Index를 활용하여 값을 저장하거나 검색하는 방식
  
+ - HashMap과 HashTable의 차이점
+   > HashMap과 HashTable 과연 무슨 차이점이 있을까?<br/>
+   > 아래의 내부 코드와 내용을 살펴보자.
+
+   A. 동기화
+   > HashMap은 동기화를 제공하고, HashTable은 동기화를 제공하며<br/>
+   > 멀티스레드를 쓰고 안쓰고에 따라 성능 차이가 있음으로 아래와 같은경 해당 방법으로 사용하자
+   >
+   > 멀티스레드 사용   - HashMap<br/>
+   > 멀티스레드 미사용 - HashTable
+
+   B. 반환값 - Enumeration(열거) 여부
+   > HashMap은 저장된 요소들의 순회를 위해 Fail-Fast Iterator를 반환한다.<br/>
+   > Hashtable은 같은 경우 Enumeration을 반환한다.
+ 
+   C. Null 여부
+   > HashMap에서는 null을 허용하고 HashTable에서는 null을 허용하지 않는다.
+ 
+   D. 보조해시함수
+   > 보조해시함수의 역할은 Key의 해시값을 변경해 해시 충돌 가능성을 줄여주는 역할을 하며<br/>
+   > 보조해시를 통해서 HashMap이 HashTable에 비해서 해시 충돌이 적게 발생한다.
+ 
+  - 차이점 한눈에 정리
+   
+     |Hash 종류|Key값 null<br/>허용여부|동기화<br/>제공여부|멀티스레드<br/>환경 지원여부|속도 우위<br/>(멀티스레드O)|속도 우위<br/>(멀티스레드X)|추천 환경|
+     |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+     |HashMap|O|O|O<br/>(Data 무결성을 보장)|HashTable보다 빠르다|HashTable보다 느리다|싱글스레드|
+     |HashTable|X|O|X|HashMap보다 느리다|HashMap보다 빠르다|멀티스레드|
+
 #### 7. 반성과 회고록
 
 
