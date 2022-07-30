@@ -175,7 +175,7 @@
 
 #### 6. HashMap과 HashTable의 차이점
  - HashMap과 HashTable의 공통점
-   A. Map을 상속 받아 구현하는 클래스이며 Key, value를 한상으로 가진 자료구조
+   A. Map을 상속 받아 구현하는 클래스이며 Key, value를 한상으로 가진 자료구조<br/>
    B. Key에 Hash함수를 적용하여 고유의 Index를 생성한 후, Index를 활용하여 값을 저장하거나 검색하는 방식
  
  - HashMap과 HashTable의 차이점
