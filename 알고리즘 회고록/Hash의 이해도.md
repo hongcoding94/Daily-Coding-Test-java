@@ -141,14 +141,14 @@
 #### 4. Hash Table 대하여
 
  - HashTable의 정의
- > Key, Value로 데이터를 저장하는 자료 구조이자 빠르게 데이터를 검색할 수 있는 자료구조<br/>
- > Key값에 대한 고유 index를 생성하여 값을 저장(buckets)하는 구조이다.<br/>
- > HashTable의 평균 시간복잡도는 O(1)이다.<br/>
- >
- > 단, 데이터의 충돌이 발생한 경우 Chaining에 연결된 리스트들까지 검색하기 때문에 O(N)까지<br/>
- > &nbsp; &nbsp; &nbsp; 시간복잡도가 증가하기 때문에 오히려 치명적인 성능저하로 이어질 수 있다.
+   > Key, Value로 데이터를 저장하는 자료 구조이자 빠르게 데이터를 검색할 수 있는 자료구조<br/>
+   > Key값에 대한 고유 index를 생성하여 값을 저장(buckets)하는 구조이다.<br/>
+   > HashTable의 평균 시간복잡도는 O(1)이다.<br/>
+   >
+   > 단, 데이터의 충돌이 발생한 경우 Chaining에 연결된 리스트들까지 검색하기 때문에 O(N)까지<br/>
+   > &nbsp; &nbsp; &nbsp; 시간복잡도가 증가하기 때문에 오히려 치명적인 성능저하로 이어질 수 있다.
  
-  ※ 추후에 "시간복잡도"라는 내용으로 추가적으로 다루도록 하겠다.
+    ※ 추후에 "시간복잡도"라는 내용으로 추가적으로 다루도록 하겠다.
  
  ❔ 그렇다면 HashMap과 HashTable의 차이점이 없는가 아닌가? <br/>
  &nbsp; &nbsp; ▶ 반은 맞고 받은 틀리다. 아래의 HashMap과 HashTable의 차이점을 알아보자. - [HashMap과 HashTable의 차이점 이동](https://github.com/hongcoding94/Daily-Coding-Test-java/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%ED%9A%8C%EA%B3%A0%EB%A1%9D/Hash%EC%9D%98%20%EC%9D%B4%ED%95%B4%EB%8F%84.md#6-hashmap%EA%B3%BC-hashtable%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90) <br/>
@@ -163,16 +163,21 @@
 #### 5. Hash Map 대하여
 
  - HashMap의 정의
- 
- 
- - HashMap
- 
- 
+   > HashMap은 Map 인터페이스를 구현한 대표적인 Map 컬렉션입니다.<br/>
+   > Map은 키와 값으로 구성된 Entry객체를 저장하는 구조를 가지고 있는 자료구조이며<br/>
+   > 많은 양의 데이터를 검색하는 데 있어서 뛰어난 성능을 보여준다.
+   >
+   > 단, 값은 중복 저장될 수 있지만 키는 중복 저장될 수 없으며 기존에 저장된 키와<br/>
+   > 동일한 키로 값을 저장하면 기존의 값은 없어지고 새로운 값으로 변경됨
+
+   ![image](https://user-images.githubusercontent.com/66407386/181888081-9859024f-a184-4af1-8e37-a53783853ee0.png)
+
  - 선언방법 및 예제
  
  
  - 예제의 출력 흐름도
 
+ 
 #### 6. HashMap과 HashTable의 차이점
  - HashMap과 HashTable의 공통점
    A. Map을 상속 받아 구현하는 클래스이며 Key, value를 한상으로 가진 자료구조<br/>
@@ -219,6 +224,8 @@
  5. [kkw9312님의 Hash에 대해 공부해보자!](https://velog.io/@kkw9312/javaHash)
  6. [st-lab님의 자바 [JAVA] - Hash Set (해시 셋) 구현하기](https://st-lab.tistory.com/240)
  7. [배하람님의 해슅 테이블이란?](https://baeharam.netlify.app/posts/data%20structure/hash-table)
+ 8. [코딩팩토리 블로그의 [Java] 자바 HashMap 사용법 & 예제 총정리](https://coding-factory.tistory.com/556)
+ 9. [java Platform의 HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html)
  
 ---
 <div align="center">
