@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/001. 입출력과 사칙연산" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/002. 조건문" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/003. 반복문" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/004. 1차원 배열" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/005. 함수 단계" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/006. 문자열" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/007. 기본 수학 1" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
